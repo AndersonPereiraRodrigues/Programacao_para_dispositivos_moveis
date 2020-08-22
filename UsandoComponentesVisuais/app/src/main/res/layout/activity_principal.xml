@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PrincipalActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sexo" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbMasc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Masc." />
+
+        <RadioButton
+            android:id="@+id/rbFem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fem." />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Atividade Física" />
+
+    <CheckBox
+        android:id="@+id/cbNatacao"
+        style="?android:attr/starStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Natação" />
+
+    <CheckBox
+        android:id="@+id/cbCorrida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Corrida" />
+
+    <CheckBox
+        android:id="@+id/cbFutebol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Futebol" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data" />
+
+    <DatePicker
+        android:id="@+id/dpData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></DatePicker>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btTestarComponenteOnClick"
+        android:src="@drawable/android"
+        android:contentDescription="Testar Componente!" />
+
+</LinearLayout>
